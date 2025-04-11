@@ -1,0 +1,246 @@
+/*Music Control*/
+#music-control{
+  padding: 10px 20px;
+  background: linear-gradient(250deg, rgb(255, 99, 71), rgba(227, 186, 50, 0.625));
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  position: fixed;    /* Fixed position */
+  bottom: 20px;       /* Distance from bottom */
+  right: 20px;        /* Distance from right */
+  z-index: 1000;     
+}
+
+/*Start of Landing Page Style*/
+.Banner-Container {
+  width: 100%;
+  height: 100px;
+}
+
+.Banner-img {
+  width: 100%;
+  height: 50vh;
+  background-image: url('../Images/banner_choco.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 25px;
+  position: fixed;
+  margin-top: 120px;
+  background-size: clamp(20px, 550vw, 1860px);
+}
+
+.Banner-Text {
+  padding-top: 50px;
+  margin-left: 25px;
+}
+
+.Banner-Text h2 {
+  letter-spacing: 15px;
+  font-weight: bold;
+  font-size: 3vw;
+  color: rgb(231, 116, 0);
+  text-shadow: 5px 5px 5px rgba(2, 2, 2, 0.888);
+  font-size: clamp(20px, 2vw, 100px);
+}
+
+.Banner-Text h1 {
+  margin-left: 3rem;
+  padding: 1rem 1rem;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: clamp(20px, 2vw, 100px);
+  color: rgb(231, 116, 0);
+  text-shadow: 5px 5px 5px rgba(2, 2, 2, 0.888);
+}
+
+#Banner-Button {
+  width: 130px;
+  height: 35px;
+  font-weight: bold;
+  background-color: rgba(255, 245, 106, 0.888);
+  letter-spacing: 3px;
+  margin-left: 25px;
+  color: navy;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  size: clamp(20px, 1vw, 100px);
+}
+/*End of Landing Page Style*/
+
+/*Start of Explore header page Style*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Small screen */
+@media (max-width: 768px) {
+  header {
+    background: linear-gradient(250deg, rgb(255, 99, 71), rgba(227, 186, 50, 0.625));
+  }
+}
+
+/* Medium screen */
+@media (min-width: 769px) and (max-width: 1200px) {
+  header {
+    background: linear-gradient(250deg, rgb(255, 99, 71), rgba(227, 186, 50, 0.625));
+  }
+}
+
+/* Large screen */
+@media (min-width: 1201px) {
+  header {
+    background: linear-gradient(250deg, rgb(255, 99, 71), rgba(227, 186, 50, 0.625));
+  }
+}
+
+.navbar h1{
+  font-size:2rem;
+  color:rgb(255, 255, 255);
+  font-style:italic;
+  text-shadow: 5px 6px 10px black;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  font-size:15px;
+  text-decoration: underline;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding:0 26px;
+}
+
+.nav-menu{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:60px;
+}
+
+.nav-items a{
+  transition:1s ease;
+}
+.nav-items:hover a{
+  color:navy;
+}
+
+.hamburger{
+  display:none;
+  cursor:pointer;
+}
+
+.bar{
+  display:block;
+  width:25px;
+  height:3px;
+  margin:5px auto;
+  -webkit-transition:all 1s ease-in-out;
+  transition:all 1s ease-in-out;
+  background-color:white;
+}
+
+@media(max-width:768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background: linear-gradient(250deg, rgb(255, 99, 71), rgba(227, 186, 50, 0.625));
+    width: 100%;
+    text-align: center;
+    transition: 1s;
+  }
+
+  .nav-items {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}
+/*end of Explore header page Style*/
+
+/*Start of Explore image products Style*/
+/*Choco mix bundle*/
+.choco-image-padding{
+  width:100%;
+  height:100px;
+  padding-top:100px;
+  padding-left:100px;
+}
+
+.choco-sample{
+  width:clamp(5px, 10vw, 1860px);
+  height:clamp(5px, 10vw, 1860px);
+  background-image: url('../Images/sample_chocolate.jpg');
+  background-repeat:no-repeat;
+  background-size:contain;
+  border:none;
+  outline:none;
+}
+
+  h1{
+  font-size: clamp(1.0rem, -6.000rem + 7.675vw, 3.0rem);
+  font-style:italic;
+  color:rgb(224, 121, 25);
+  text-shadow: 5px 2.5px 5px;
+ 
+  }
+
+  h2{
+    font-size: clamp(0.5rem, -6.500rem + 7.570vw, 3.0rem);
+    font-style:italic;
+    color:rgb(224, 121, 25);
+    text-shadow: 5px 2.5px 5px;
+  }
+
+  /*Choco Nip Nips*/
+  .choco-nip-padding{
+    width: 100%;
+    height: 100px;
+    padding-left:400px;
+  }
+  .choco-nip-nips{
+    width: clamp(5px, 10vw, 1860px);
+    height: clamp(5px, 6vw, 1860px);
+    background-image: url('../Images/Choco_nip\ nips.jpg');
+    background-repeat:no-repeat;
+    background-size:contain;
+  }
+
+  .choco-nip-text h1{
+    font-size:clamp(1.0rem, -6.000rem + 7.657vw, 3.0rem);
+    font-style:italic;
+    color:rgb(224, 121, 25);
+    text-shadow: 5px 2.5px 5px;
+  }
